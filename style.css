@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.cards .card .card-item {
+  width: 270px;
+  height: 209px;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cards .card .card-item .Discount {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+.cards .card .card-item .remove {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.cards .card button {
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 270px;
+  background-color: #000;
+  color: #FAFAFA;
+  padding: 8px 0 9px 0;
+  border-radius: 0 0 4px 4px;
+}
+.cards .card button:hover {
+  cursor: pointer;
+}
+.cards .card h4 {
+  margin: 16px 0 8px 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+.cards .card .price {
+  display: flex;
+  gap: 12px;
+}
+.cards .card .price p {
+  color: #DB4444;
+}
+.cards .card .price span {
+  color: #000;
+  opacity: 50%;
+  text-decoration-line: line-through;
+}
+.cards .card .review {
+  margin-top: 8px;
+  margin-left: -5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .header-top {
+  padding: 12px 136px;
+  background-color: #000;
+  color: #FAFAFA;
+  display: flex;
+}
+header .header-top p {
+  margin-left: auto;
+}
+header .header-top p span {
+  margin-left: 8px;
+  text-decoration: underline;
+}
+header .header-top p span:hover {
+  cursor: pointer;
+}
+header .header-top button {
+  margin-left: auto;
+  background-color: transparent;
+  border: 0;
+  color: #FAFAFA;
+}
+header .header-top button:hover {
+  cursor: pointer;
+}
+header .header-top button img {
+  margin-left: 5px;
+}
+@media (max-width: 1216px) {
+  header .header-top {
+    padding: 12px 25px;
+  }
+}
+header .header-main {
+  padding: 40px 135px 110px 135px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-main #logo:hover {
+  cursor: pointer;
+}
+header .header-main nav ul {
+  display: flex;
+  gap: 48px;
+}
+header .header-main nav ul li a {
+  color: #000;
+  font-size: 16px;
+}
+@media (max-width: 1216px) {
+  header .header-main nav ul {
+    gap: 20px;
+  }
+}
+header .header-main form {
+  padding: 7px 12px 7px 20px;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+header .header-main form input {
+  background-color: transparent;
+  border: 0;
+  font-size: 12px;
+  width: 153px;
+}
+header .header-main form input:focus {
+  outline: none;
+}
+header .header-main form img {
+  margin-left: 34px;
+}
+header .header-main .cart {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media (max-width: 1216px) {
+  header .header-main {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 10px;
+  }
+}
+
+main {
+  padding: 0 138px 108px 132px;
+}
+@media (max-width: 1216px) {
+  main .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+main .wishlist {
+  margin-bottom: 98px;
+}
+main .wishlist .wishlist-top {
+  position: relative;
+  margin-bottom: 60px;
+}
+main .wishlist .wishlist-top p {
+  color: #000;
+  font-size: 20px;
+}
+main .wishlist .wishlist-top img {
+  position: absolute;
+  right: -138px;
+  top: 0;
+}
+@media (max-width: 1216px) {
+  main .wishlist .wishlist-top img {
+    display: none;
+  }
+}
+main .for-you .for-you-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+main .for-you .for-you-main .for-you-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+main .for-you .for-you-main .for-you-left h4 {
+  font-size: 20px;
+  color: #000;
+}
+main .for-you .for-you-main button {
+  border: 1px solid #000;
+  padding: 16px 48px;
+  background-color: transparent;
+  border-radius: 4px;
+}
+main .for-you .for-you-main button:hover {
+  cursor: pointer;
+}
+@media (max-width: 1216px) {
+  main {
+    padding: 0 20px 108px 20px;
+  }
+}
+
+footer {
+  padding: 80px 135px 24px 135px;
+  background-color: #000;
+  color: #FAFAFA;
+}
+footer p {
+  font-size: 16px;
+}
+footer h5 {
+  font-size: 20px;
+}
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+footer .footer-top .footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+footer .footer-top .footer-logo img {
+  width: 118px;
+}
+footer .footer-top .footer-logo form {
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1.5px solid #FAFAFA;
+  display: flex;
+  align-items: center;
+  width: 217px;
+}
+footer .footer-top .footer-logo form input {
+  background-color: transparent;
+  border: 0;
+  color: #FAFAFA;
+}
+footer .footer-top .footer-logo form input:focus {
+  outline: none;
+}
+footer .footer-top .footer-mid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .footer-top .footer-right h5 {
+  margin-bottom: 24px;
+}
+footer .footer-top .footer-right span {
+  opacity: 0.7;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+footer .footer-top .footer-right .download {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+footer .footer-top .footer-right .download .app-store {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+footer .footer-top .footer-right .socials {
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 1216px) {
+  footer .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+}
+footer .footer-bot {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-bot span {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  opacity: 30%;
+}
+footer .footer-bot span img {
+  margin-right: 4px;
+}
+@media (max-width: 1216px) {
+  footer {
+    padding: 40px 40px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,283 @@
+@import "variables";
+@import "cards";
+@import "reset";
+
+header {
+  .header-top {
+    padding: 12px 136px;
+    background-color: $black;
+    color: $gray-text;
+    display: flex;
+
+    p {
+      margin-left: auto;
+
+      span {
+        margin-left: 8px;
+        text-decoration: underline;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    button {
+      margin-left: auto;
+      background-color: transparent;
+      border: 0;
+      color: $gray-text;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      img {
+        margin-left: 5px;
+      }
+    }
+
+    @include responsive {
+      padding: 12px 25px;
+    }
+  }
+
+  .header-main {
+    padding: 40px 135px 110px 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    #logo {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    nav {
+      ul {
+        display: flex;
+        gap: 48px;
+
+        li {
+          a {
+            color: $black;
+            font-size: 16px;
+          }
+        }
+
+        @include responsive {
+          gap: 20px;
+        }
+      }
+    }
+
+    form {
+      padding: 7px 12px 7px 20px;
+      background-color: $searchbar-color;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+
+      input {
+        background-color: transparent;
+        border: 0;
+        font-size: 12px;
+        width: 153px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      img {
+        margin-left: 34px;
+      }
+    }
+
+    .cart {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    @include responsive {
+      flex-direction: column;
+      gap: 20px;
+      padding: 40px 10px;
+    }
+  }
+}
+
+main {
+  padding: 0 138px 108px 132px;
+
+  .cards {
+    @include responsive {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+  }
+
+  .wishlist {
+    margin-bottom: 98px;
+    .wishlist-top {
+      position: relative;
+      margin-bottom: 60px;
+
+      p {
+        color: $black;
+        font-size: 20px;
+      }
+      img {
+        position: absolute;
+        right: -138px;
+        top: 0;
+
+        @include responsive {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .for-you {
+    .for-you-main {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      .for-you-left {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        h4 {
+          font-size: 20px;
+          color: $black;
+        }
+      }
+
+      button {
+        border: 1px solid $black;
+        padding: 16px 48px;
+        background-color: transparent;
+        border-radius: 4px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @include responsive {
+    padding: 0 20px 108px 20px;
+  }
+}
+
+footer {
+  padding: 80px 135px 24px 135px;
+  background-color: $black;
+  color: $gray-text;
+
+  p {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    .footer-logo {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      img {
+        width: 118px;
+      }
+      form {
+        padding: 12px 16px;
+        border-radius: 4px;
+        border: 1.5px solid $gray-text;
+        display: flex;
+        align-items: center;
+        width: 217px;
+        input {
+          background-color: transparent;
+          border: 0;
+          color: $gray-text;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .footer-mid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .footer-right {
+      h5 {
+        margin-bottom: 24px;
+      }
+      span {
+        opacity: 0.7;
+        font-size: 12px;
+        margin-bottom: 8px;
+      }
+
+      .download {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 24px;
+
+        .app-store {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+      }
+
+      .socials {
+        display: flex;
+        gap: 24px;
+      }
+    }
+
+    @include responsive {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .footer-bot {
+    display: flex;
+    justify-content: center;
+    span {
+      display: flex;
+      align-items: center;
+      color: $white;
+      font-size: 16px;
+      opacity: 30%;
+
+      img {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  @include responsive {
+    padding: 40px 40px;
+  }
+}
