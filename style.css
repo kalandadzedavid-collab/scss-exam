@@ -251,6 +251,11 @@ footer .footer-top .footer-logo {
 footer .footer-top .footer-logo img {
   width: 118px;
 }
+@media (max-width: 1216px) {
+  footer .footer-top .footer-logo img {
+    align-self: center;
+  }
+}
 footer .footer-top .footer-logo form {
   padding: 12px 16px;
   border-radius: 4px;
